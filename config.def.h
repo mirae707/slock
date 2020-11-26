@@ -1,6 +1,6 @@
 /* user and group to drop privileges to */
-static const char *user  = "nobody";
-static const char *group = "nogroup";
+static const char *user  = "cocojun";
+static const char *group = "cocojun";
 
 static const char *colorname[NUMCOLS] = {
 	[INIT] =   "black",     /* after initialization */
@@ -14,3 +14,6 @@ static const int failonclear = 1;
 
 /* PAM service that's used for authentication */
 static const char* pam_service = "login";
+
+/* time in seconds before the monitor shuts down */
+static const int monitortime = 5;
